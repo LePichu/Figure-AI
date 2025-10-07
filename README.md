@@ -1,42 +1,36 @@
-# .
+# Figure-AI
 
-This template should help get you started developing with Vue 3 in Vite.
+An experimental project that tries to recreate something like [Character.AI](https://c.ai/) on a smaller scale, with its own persistent, local characters.
 
-## Recommended IDE Setup
+## Tech Stack
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+-   **Frontend:** [Vue 3](https://vuejs.org/) (powered by [Vite](https://vitejs.dev/))
+-   **State Management:** [Pinia](https://pinia.vuejs.org/)
+-   **Routing:** [Vue Router](https://router.vuejs.org/)
+-   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+-   **API Client:** [openai-node](https://github.com/openai/openai-node)
+-   **Backend:** Any local AI model served via an OpenAI-compatible API endpoint (e.g., [LM Studio](https://lmstudio.ai/), [Ollama](https://ollama.ai/)) (I am using `llama-cpp`'s server locally with the LLaMa 3 8B Uncensored variant). 
 
-## Recommended Browser Setup
+## Getting Started
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/LePichu/Figure-AI.git
+    cd Figure-AI
+    ```
 
-## Type Support for `.vue` Imports in TS
+2.  **Install dependencies:**
+    ```bash
+    pnpm install
+    ```
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+3.  **Run your local AI server** and ensure its API is available at `http://127.0.0.1:3000/v1`.
 
-## Customize configuration
+4.  **Start the development server:**
+    ```bash
+    pnpm run dev
+    ```
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## License
 
-## Project Setup
-
-```sh
-pnpm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-pnpm dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-pnpm build
-```
+This project is licensed under the [**MIT License**](./LICENSE).
