@@ -4,22 +4,24 @@ An experimental project that tries to recreate something like [Character.AI](htt
 
 ## Tech Stack
 
--   **Frontend:** [Vue 3](https://vuejs.org/) (powered by [Vite](https://vitejs.dev/))
--   **State Management:** [Pinia](https://pinia.vuejs.org/)
--   **Routing:** [Vue Router](https://router.vuejs.org/)
--   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
--   **API Client:** [openai-node](https://github.com/openai/openai-node)
--   **Backend:** Any local AI model served via an OpenAI-compatible API endpoint (e.g., [LM Studio](https://lmstudio.ai/), [Ollama](https://ollama.ai/)) (I am using `llama-cpp`'s server locally with the LLaMa 3 8B Uncensored variant). 
+- **Frontend:** [Vue 3](https://vuejs.org/) (powered by [Vite](https://vitejs.dev/))
+- **State Management:** [Pinia](https://pinia.vuejs.org/)
+- **Routing:** [Vue Router](https://router.vuejs.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **API Client:** [openai-node](https://github.com/openai/openai-node)
+- **Backend:** Any local AI model served via an OpenAI-compatible API endpoint (e.g., [LM Studio](https://lmstudio.ai/), [Ollama](https://ollama.ai/)) (I am using `llama-cpp`'s server locally with the LLaMa 3 8B Uncensored variant).
 
 ## Getting Started
 
 1.  **Clone the repository:**
+
     ```bash
     git clone https://github.com/LePichu/Figure-AI.git
     cd Figure-AI
     ```
 
 2.  **Install dependencies:**
+
     ```bash
     pnpm install
     ```
